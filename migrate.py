@@ -29,7 +29,7 @@ with template_col:
         except Exception as e:
             st.error(f"Error reading the CSV file: {e}")
     else:
-        st.info("Please upload a template CSV file to get started.")
+        st.info("Please upload a template CSV file.")
 
 with match_col:
     # File uploader widget
@@ -53,7 +53,7 @@ with match_col:
         except Exception as e:
             st.error(f"Error reading the CSV file: {e}")
     else:
-        st.info("Please upload a CSV file to get started.")
+        st.info("Please upload a CSV file to match.")
 
 if template_file is not None and file_to_match is not None:
     st.subheader("🔄 Match Columns and Export")
