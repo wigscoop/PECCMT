@@ -2,6 +2,13 @@ import streamlit as st
 import pandas as pd
 import json
 
+# Set the page configuration
+st.set_page_config(
+    page_title="CSV Column Matcher",  # This sets the browser tab title
+    page_icon="📁",                   # Optional: sets the favicon
+    layout="wide"                     # Optional: makes better use of screen space
+)
+
 # Set the title of the app
 st.title("CSV Column Matcher")
 
